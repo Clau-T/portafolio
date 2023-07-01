@@ -1,0 +1,2306 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Claudio.">
+	</meta>
+	<meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria">
+	</meta>
+
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<meta name="DC:Creator" content="Claudio" />
+	<meta name="DC:Title" content="Puzle Conceptos matemáticos" />
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>
+		Conceptos matemáticos
+	</title>
+
+	<!-- Made with executable version 6.3 Release 0 Build 3 -->
+
+	<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+	<style type="text/css">
+		/* This is the CSS stylesheet used in the exercise. */
+		/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+		/* BeginCorePageCSS */
+
+		/* Made with executable version 6.3 Release 0 Build 3 */
+
+
+		/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+		* html object.MediaPlayerNotForIE {
+			display: none;
+		}
+
+		body {
+			font-family: Arial, sans-serif, Geneva;
+			background-color: #5e70bd;
+			color: #85d882;
+
+			margin-right: 5%;
+			margin-left: 5%;
+			font-size: small;
+		}
+
+		p {
+			text-align: left;
+			margin: 0px;
+			font-size: 100%;
+		}
+
+		table,
+		div,
+		span,
+		td {
+			font-size: 100%;
+			color: #000000;
+		}
+
+		div.Titles {
+			padding: 0.5em;
+			;
+			text-align: center;
+			color: #ffffff;
+		}
+
+		button {
+			font-family: Arial, sans-serif, Geneva;
+			font-size: 100%;
+			display: inline;
+		}
+
+		.ExerciseTitle {
+			font-size: 140%;
+			color: #ffffff;
+		}
+
+		.ExerciseSubtitle {
+			font-size: 120%;
+			color: #000000;
+		}
+
+		div.StdDiv {
+			background-color: #ebe5e5;
+			text-align: center;
+			font-size: 100%;
+			color: #000000;
+			padding: 0.5em;
+			border-style: solid;
+			border-width: 1px 1px 1px 1px;
+			border-color: #000000;
+			margin-bottom: 1px;
+		}
+
+		/* EndCorePageCSS */
+
+		.RTLText {
+			text-align: right;
+			font-size: 150%;
+			direction: rtl;
+			font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva, Arial, sans-serif;
+		}
+
+		.CentredRTLText {
+			text-align: center;
+			font-size: 150%;
+			direction: rtl;
+			font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva, Arial, sans-serif;
+		}
+
+		button p.RTLText {
+			text-align: center;
+		}
+
+		.RTLGapBox {
+			text-align: right;
+			font-size: 150%;
+			direction: rtl;
+			font-family: "Times New Roman", Geneva, Arial, sans-serif;
+		}
+
+		.Guess {
+			font-weight: bold;
+		}
+
+		.CorrectAnswer {
+			font-weight: bold;
+		}
+
+		div#Timer {
+			padding: 0.25em;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			color: #000000;
+		}
+
+		span#TimerText {
+			padding: 0.25em;
+			border-width: 1px;
+			border-style: solid;
+			font-weight: bold;
+			display: none;
+			color: #000000;
+		}
+
+		span.Instructions {}
+
+		div.ExerciseText {}
+
+		.FeedbackText,
+		.FeedbackText span.CorrectAnswer,
+		.FeedbackText span.Guess,
+		.FeedbackText span.Answer {
+			color: #000000;
+		}
+
+		.LeftItem {
+			font-size: 100%;
+			color: #000000;
+			text-align: left;
+		}
+
+		.RightItem {
+			font-weight: bold;
+			font-size: 100%;
+			color: #000000;
+		}
+
+		span.CorrectMark {}
+
+		input,
+		textarea {
+			font-family: Arial, Geneva, sans-serif;
+			font-size: 120%;
+		}
+
+		select {
+			font-size: 100%;
+		}
+
+		div.Feedback {
+			background-color: #C0C0C0;
+			left: 33%;
+			width: 34%;
+			top: 33%;
+			z-index: 1;
+			border-style: solid;
+			border-width: 1px;
+			padding: 5px;
+			text-align: center;
+			color: #000000;
+			position: absolute;
+			display: none;
+			font-size: 100%;
+		}
+
+
+
+
+		div.ExerciseDiv {
+			color: #000000;
+		}
+
+		/* JMatch flashcard styles */
+		table.FlashcardTable {
+			background-color: transparent;
+			color: #000000;
+			border-color: #000000;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			width: 90%;
+			position: relative;
+			text-align: center;
+			padding: 0px;
+		}
+
+		table.FlashcardTable tr {
+			border-style: none;
+			margin: 0px;
+			padding: 0px;
+			background-color: #FFFFFF;
+		}
+
+		table.FlashcardTable td.Showing {
+			font-size: 140%;
+			text-align: center;
+			width: 50%;
+			display: table-cell;
+			padding: 2em;
+			margin: 0px;
+			border-style: solid;
+			border-width: 1px;
+			color: #000000;
+			background-color: #FFFFFF;
+		}
+
+		table.FlashcardTable td.Hidden {
+			display: none;
+		}
+
+		/* JMix styles */
+		div#SegmentDiv {
+			margin-top: 2em;
+			margin-bottom: 2em;
+			text-align: center;
+		}
+
+		a.ExSegment {
+			font-size: 120%;
+			font-weight: bold;
+			text-decoration: none;
+			color: #000000;
+		}
+
+		span.RemainingWordList {
+			font-style: italic;
+		}
+
+		div.DropLine {
+			position: absolute;
+			text-align: center;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-color: #000000;
+			width: 80%;
+		}
+
+		/* JCloze styles */
+
+		.ClozeWordList {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		div.ClozeBody {
+			text-align: left;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			line-height: 2.0
+		}
+
+		span.GapSpan {
+			font-weight: bold;
+		}
+
+		/* JCross styles */
+
+		table.CrosswordGrid {
+			margin: auto auto 1em auto;
+			border-collapse: collapse;
+			padding: 0px;
+			background-color: #000000;
+		}
+
+		table.CrosswordGrid tbody tr td {
+			width: 1.5em;
+			height: 1.5em;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 140%;
+			padding: 1px;
+			margin: 0px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #000000;
+			color: #000000;
+		}
+
+		table.CrosswordGrid span {
+			color: #000000;
+		}
+
+		table.CrosswordGrid td.BlankCell {
+			background-color: #000000;
+			color: #000000;
+		}
+
+		table.CrosswordGrid td.LetterOnlyCell {
+			text-align: center;
+			vertical-align: middle;
+			background-color: #ffffff;
+			color: #000000;
+			font-weight: bold;
+		}
+
+		table.CrosswordGrid td.NumLetterCell {
+			text-align: left;
+			vertical-align: top;
+			background-color: #ffffff;
+			color: #000000;
+			padding: 1px;
+			font-weight: bold;
+		}
+
+		.NumLetterCellText {
+			cursor: pointer;
+			color: #000000;
+		}
+
+		.GridNum {
+			vertical-align: super;
+			font-size: 66%;
+			font-weight: bold;
+			text-decoration: none;
+			color: #000000;
+		}
+
+		.GridNum:hover,
+		.GridNum:visited {
+			color: #000000;
+		}
+
+		table#Clues {
+			margin: auto;
+			vertical-align: top;
+		}
+
+		table#Clues td {
+			vertical-align: top;
+		}
+
+		table.ClueList {
+			margin: auto;
+		}
+
+		td.ClueNum {
+			text-align: right;
+			font-weight: bold;
+			vertical-align: top;
+		}
+
+		td.Clue {
+			text-align: left;
+		}
+
+		div#ClueEntry {
+			text-align: left;
+			margin-bottom: 1em;
+		}
+
+		/* Keypad styles */
+
+		div.Keypad {
+			text-align: center;
+			display: none;
+			/* initially hidden, shown if needed */
+			margin-bottom: 0.5em;
+		}
+
+		div.Keypad button {
+			font-family: Geneva, Arial, sans-serif;
+			font-size: 120%;
+			background-color: #ffffff;
+			color: #000000;
+			width: 2em;
+		}
+
+		/* JQuiz styles */
+
+		div.QuestionNavigation {
+			text-align: center;
+		}
+
+		.QNum {
+			margin: 0em 1em 0.5em 1em;
+			font-weight: bold;
+			vertical-align: middle;
+		}
+
+		textarea {
+			font-family: Geneva, Arial, sans-serif;
+		}
+
+		.QuestionText {
+			text-align: left;
+			margin: 0px;
+			font-size: 100%;
+		}
+
+		.Answer {
+			font-size: 120%;
+			letter-spacing: 0.1em;
+		}
+
+		.PartialAnswer {
+			font-size: 120%;
+			letter-spacing: 0.1em;
+			color: #000000;
+		}
+
+		.Highlight {
+			color: #000000;
+			background-color: #ffff00;
+			font-weight: bold;
+			font-size: 120%;
+		}
+
+		ol.QuizQuestions {
+			text-align: left;
+			list-style-type: none;
+		}
+
+		li.QuizQuestion {
+			padding: 1em;
+			border-style: solid;
+			border-width: 0px 0px 1px 0px;
+		}
+
+		ol.MCAnswers {
+			text-align: left;
+			list-style-type: upper-alpha;
+			padding: 1em;
+		}
+
+		ol.MCAnswers li {
+			margin-bottom: 1em;
+		}
+
+		ol.MSelAnswers {
+			text-align: left;
+			list-style-type: lower-alpha;
+			padding: 1em;
+		}
+
+		div.ShortAnswer {
+			padding: 1em;
+		}
+
+		.FuncButton {
+			text-align: center;
+			border-style: solid;
+
+			border-left-color: #ffffff;
+			border-top-color: #ffffff;
+			border-right-color: #7f7f7f;
+			border-bottom-color: #7f7f7f;
+			color: #000000;
+			background-color: #FFFFFF;
+
+			border-width: 2px;
+			padding: 3px 6px 3px 6px;
+			cursor: pointer;
+		}
+
+		.FuncButtonUp {
+			color: #FFFFFF;
+			text-align: center;
+			border-style: solid;
+
+			border-left-color: #ffffff;
+			border-top-color: #ffffff;
+			border-right-color: #7f7f7f;
+			border-bottom-color: #7f7f7f;
+
+			background-color: #000000;
+			color: #FFFFFF;
+			border-width: 2px;
+			padding: 3px 6px 3px 6px;
+			cursor: pointer;
+		}
+
+		.FuncButtonDown {
+			color: #FFFFFF;
+			text-align: center;
+			border-style: solid;
+
+			border-left-color: #7f7f7f;
+			border-top-color: #7f7f7f;
+			border-right-color: #ffffff;
+			border-bottom-color: #ffffff;
+			background-color: #000000;
+			color: #FFFFFF;
+
+			border-width: 2px;
+			padding: 3px 6px 3px 6px;
+			cursor: pointer;
+		}
+
+		/*BeginNavBarStyle*/
+
+		div.NavButtonBar {
+			background-color: #000000;
+			text-align: center;
+			margin: 2px 0px 2px 0px;
+			clear: both;
+			font-size: 100%;
+		}
+
+		.NavButton {
+			border-style: solid;
+
+			border-left-color: #7f7f7f;
+			border-top-color: #7f7f7f;
+			border-right-color: #000000;
+			border-bottom-color: #000000;
+			background-color: #000000;
+			color: #ffffff;
+
+			border-width: 2px;
+			cursor: pointer;
+		}
+
+		.NavButtonUp {
+			border-style: solid;
+
+			border-left-color: #7f7f7f;
+			border-top-color: #7f7f7f;
+			border-right-color: #000000;
+			border-bottom-color: #000000;
+			color: #000000;
+			background-color: #ffffff;
+
+			border-width: 2px;
+			cursor: pointer;
+		}
+
+		.NavButtonDown {
+			border-style: solid;
+
+			border-left-color: #000000;
+			border-top-color: #000000;
+			border-right-color: #7f7f7f;
+			border-bottom-color: #7f7f7f;
+			color: #000000;
+			background-color: #ffffff;
+
+			border-width: 2px;
+			cursor: pointer;
+		}
+
+		/*EndNavBarStyle*/
+
+		a {
+			color: #0000FF;
+		}
+
+		a:visited {
+			color: #0000CC;
+		}
+
+		a:hover {
+			color: #0000FF;
+		}
+
+		div.CardStyle {
+			position: absolute;
+			font-family: Geneva, Arial, sans-serif;
+			font-size: 100%;
+			padding: 5px;
+			border-style: solid;
+			border-width: 1px;
+			color: #000000;
+			background-color: #FFFFFF;
+			left: -50px;
+			top: -50px;
+			overflow: visible;
+		}
+
+		.rtl {
+			text-align: right;
+			font-size: 140%;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		//<![CDATA[
+
+
+		function Client() {
+			//if not a DOM browser, hopeless
+			this.min = false; if (document.getElementById) { this.min = true; };
+
+			this.ua = navigator.userAgent;
+			this.name = navigator.appName;
+			this.ver = navigator.appVersion;
+
+			//Get data about the browser
+			this.mac = (this.ver.indexOf('Mac') != -1);
+			this.win = (this.ver.indexOf('Windows') != -1);
+
+			//Look for Gecko
+			this.gecko = (this.ua.indexOf('Gecko') > 1);
+			if (this.gecko) {
+				this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko') + 6, this.ua.length));
+				if (this.geckoVer < 20020000) { this.min = false; }
+			}
+
+			//Look for Firebird
+			this.firebird = (this.ua.indexOf('Firebird') > 1);
+
+			//Look for Safari
+			this.safari = (this.ua.indexOf('Safari') > 1);
+			if (this.safari) {
+				this.gecko = false;
+			}
+
+			//Look for IE
+			this.ie = (this.ua.indexOf('MSIE') > 0);
+			if (this.ie) {
+				this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE') + 5, this.ua.length));
+				if (this.ieVer < 5.5) { this.min = false; }
+			}
+
+			//Look for Opera
+			this.opera = (this.ua.indexOf('Opera') > 0);
+			if (this.opera) {
+				this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera') + 6, this.ua.length));
+				if (this.operaVer < 7.04) { this.min = false; }
+			}
+			if (this.min == false) {
+				alert('Your browser may not be able to handle this page.');
+			}
+
+			//Special case for the horrible ie5mac
+			this.ie5mac = (this.ie && this.mac && (this.ieVer < 6));
+		}
+
+		var C = new Client();
+
+		//for (prop in C){
+		//	alert(prop + ': ' + C[prop]);
+		//}
+
+
+
+		//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+		//[strNavBarJS]
+		function NavBtnOver(Btn) {
+			if (Btn.className != 'NavButtonDown') { Btn.className = 'NavButtonUp'; }
+		}
+
+		function NavBtnOut(Btn) {
+			Btn.className = 'NavButton';
+		}
+
+		function NavBtnDown(Btn) {
+			Btn.className = 'NavButtonDown';
+		}
+		//[/strNavBarJS]
+
+		function FuncBtnOver(Btn) {
+			if (Btn.className != 'FuncButtonDown') { Btn.className = 'FuncButtonUp'; }
+		}
+
+		function FuncBtnOut(Btn) {
+			Btn.className = 'FuncButton';
+		}
+
+		function FuncBtnDown(Btn) {
+			Btn.className = 'FuncButtonDown';
+		}
+
+		function FocusAButton() {
+			if (document.getElementById('CheckButton1') != null) {
+				document.getElementById('CheckButton1').focus();
+			}
+			else {
+				if (document.getElementById('CheckButton2') != null) {
+					document.getElementById('CheckButton2').focus();
+				}
+				else {
+					document.getElementsByTagName('button')[0].focus();
+				}
+			}
+		}
+
+
+
+
+		//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+		var topZ = 1000;
+
+		function ShowMessage(Feedback) {
+			var Output = Feedback + '<br /><br />';
+			document.getElementById('FeedbackContent').innerHTML = Output;
+			var FDiv = document.getElementById('FeedbackDiv');
+			topZ++;
+			FDiv.style.zIndex = topZ;
+			FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+			FDiv.style.display = 'block';
+
+			ShowElements(false, 'input');
+			ShowElements(false, 'select');
+			ShowElements(false, 'object');
+			ShowElements(true, 'object', 'FeedbackContent');
+
+			//Focus the OK button
+			setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+
+			//
+		}
+
+		function ShowElements(Show, TagName, ContainerToReverse) {
+			// added third argument to allow objects in the feedback box to appear
+			//IE bug -- hide all the form elements that will show through the popup
+			//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+			//unless the object's display property is changed
+
+			//get container object (by Id passed in, or use document otherwise)
+			TopNode = document.getElementById(ContainerToReverse);
+			var Els;
+			if (TopNode != null) {
+				Els = TopNode.getElementsByTagName(TagName);
+			} else {
+				Els = document.getElementsByTagName(TagName);
+			}
+
+			for (var i = 0; i < Els.length; i++) {
+				if (TagName == "object") {
+					//manipulate object elements in all browsers
+					if (Show == true) {
+						Els[i].style.visibility = 'visible';
+						//get Mac FireFox to manipulate display, to force screen redraw
+						if (C.mac && C.gecko) { Els[i].style.display = ''; }
+					}
+					else {
+						Els[i].style.visibility = 'hidden';
+						if (C.mac && C.gecko) { Els[i].style.display = 'none'; }
+					}
+				}
+				else {
+					// tagName is either input or select (that is, Form Elements)
+					// ie6 has a problem with Form elements, so manipulate those
+					if (C.ie) {
+						if (C.ieVer < 7) {
+							if (Show == true) {
+								Els[i].style.visibility = 'visible';
+							}
+							else {
+								Els[i].style.visibility = 'hidden';
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+
+		function HideFeedback() {
+			document.getElementById('FeedbackDiv').style.display = 'none';
+			ShowElements(true, 'input');
+			ShowElements(true, 'select');
+			ShowElements(true, 'object');
+			if (Finished == true) {
+				Finish();
+			}
+		}
+
+
+		//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+		//PAGE DIMENSION FUNCTIONS
+		function PageDim() {
+			//Get the page width and height
+			this.W = 600;
+			this.H = 400;
+			this.W = document.getElementsByTagName('body')[0].clientWidth;
+			this.H = document.getElementsByTagName('body')[0].clientHeight;
+		}
+
+		var pg = null;
+
+		function GetPageXY(El) {
+			var XY = { x: 0, y: 0 };
+			while (El) {
+				XY.x += El.offsetLeft;
+				XY.y += El.offsetTop;
+				El = El.offsetParent;
+			}
+			return XY;
+		}
+
+		function GetScrollTop() {
+			if (typeof (window.pageYOffset) == 'number') {
+				return window.pageYOffset;
+			}
+			else {
+				if ((document.body) && (document.body.scrollTop)) {
+					return document.body.scrollTop;
+				}
+				else {
+					if ((document.documentElement) && (document.documentElement.scrollTop)) {
+						return document.documentElement.scrollTop;
+					}
+					else {
+						return 0;
+					}
+				}
+			}
+		}
+
+		function GetViewportHeight() {
+			if (typeof window.innerHeight != 'undefined') {
+				return window.innerHeight;
+			}
+			else {
+				if (((typeof document.documentElement != 'undefined') && (typeof document.documentElement.clientHeight !=
+					'undefined')) && (document.documentElement.clientHeight != 0)) {
+					return document.documentElement.clientHeight;
+				}
+				else {
+					return document.getElementsByTagName('body')[0].clientHeight;
+				}
+			}
+		}
+
+		function TopSettingWithScrollOffset(TopPercent) {
+			var T = Math.floor(GetViewportHeight() * (TopPercent / 100));
+			return GetScrollTop() + T;
+		}
+
+		//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+		var InTextBox = false;
+
+		function SuppressBackspace(e) {
+			if (InTextBox == true) { return; }
+			if (C.ie) {
+				thisKey = window.event.keyCode;
+			}
+			else {
+				thisKey = e.keyCode;
+			}
+
+			var Suppress = false;
+
+			if (thisKey == 8) {
+				Suppress = true;
+			}
+
+			if (Suppress == true) {
+				if (C.ie) {
+					window.event.returnValue = false;
+					window.event.cancelBubble = true;
+				}
+				else {
+					e.preventDefault();
+				}
+			}
+		}
+
+		if (C.ie) {
+			document.attachEvent('onkeydown', SuppressBackspace);
+			window.attachEvent('onkeydown', SuppressBackspace);
+		}
+		else {
+			if (window.addEventListener) {
+				window.addEventListener('keypress', SuppressBackspace, false);
+			}
+		}
+
+		function ReduceItems(InArray, ReduceToSize) {
+			var ItemToDump = 0;
+			var j = 0;
+			while (InArray.length > ReduceToSize) {
+				ItemToDump = Math.floor(InArray.length * Math.random());
+				InArray.splice(ItemToDump, 1);
+			}
+		}
+
+		function Shuffle(InArray) {
+			var Num;
+			var Temp = new Array();
+			var Len = InArray.length;
+
+			var j = Len;
+
+			for (var i = 0; i < Len; i++) {
+				Temp[i] = InArray[i];
+			}
+
+			for (i = 0; i < Len; i++) {
+				Num = Math.floor(j * Math.random());
+				InArray[i] = Temp[Num];
+
+				for (var k = Num; k < (j - 1); k++) {
+					Temp[k] = Temp[k + 1];
+				}
+				j--;
+			}
+			return InArray;
+		}
+
+		function WriteToInstructions(Feedback) {
+			document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+		}
+
+
+
+
+		function EscapeDoubleQuotes(InString) {
+			return InString.replace(/"/g, '&quot;')
+		}
+
+		function TrimString(InString) {
+			var x = 0;
+
+			if (InString.length != 0) {
+				while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')) {
+					InString = InString.substring(0, InString.length - 1)
+				}
+
+				while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')) {
+					InString = InString.substring(1, InString.length)
+				}
+
+				while (InString.indexOf('  ') != -1) {
+					x = InString.indexOf('  ')
+					InString = InString.substring(0, x) + InString.substring(x + 1, InString.length)
+				}
+
+				return InString;
+			}
+
+			else {
+				return '';
+			}
+		}
+
+		function FindLongest(InArray) {
+			if (InArray.length < 1) { return -1; }
+
+			var Longest = 0;
+			for (var i = 1; i < InArray.length; i++) {
+				if (InArray[i].length > InArray[Longest].length) {
+					Longest = i;
+				}
+			}
+			return Longest;
+		}
+
+		//UNICODE CHARACTER FUNCTIONS
+		function IsCombiningDiacritic(CharNum) {
+			var Result = (((CharNum >= 0x0300) && (CharNum <= 0x370)) || ((CharNum >= 0x20d0) && (CharNum <= 0x20ff)));
+			Result = Result || (((CharNum >= 0x3099) && (CharNum <= 0x309a)) || ((CharNum >= 0xfe20) && (CharNum <= 0xfe23)));
+			return Result;
+		}
+
+		function IsCJK(CharNum) {
+			return ((CharNum >= 0x3000) && (CharNum < 0xd800));
+		}
+
+		//SETUP FUNCTIONS
+		//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+		function ClearTextBoxes() {
+			var NList = document.getElementsByTagName('input');
+			for (var i = 0; i < NList.length; i++) {
+				if ((NList[i].id.indexOf('Guess') > -1) || (NList[i].id.indexOf('Gap') > -1)) {
+					NList[i].value = '';
+				}
+				if (NList[i].id.indexOf('Chk') > -1) {
+					NList[i].checked = '';
+				}
+			}
+		}
+
+		//EXTENSION TO ARRAY OBJECT
+		function Array_IndexOf(Input) {
+			var Result = -1;
+			for (var i = 0; i < this.length; i++) {
+				if (this[i] == Input) {
+					Result = i;
+				}
+			}
+			return Result;
+		}
+		Array.prototype.indexOf = Array_IndexOf;
+
+		//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+		function RemoveBottomNavBarForIE() {
+			if ((C.ie) && (document.getElementById('Reading') != null)) {
+				if (document.getElementById('BottomNavBar') != null) {
+					document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+				}
+			}
+		}
+
+
+
+
+		//HOTPOTNET-RELATED CODE
+
+		var HPNStartTime = (new Date()).getTime();
+		var SubmissionTimeout = 30000;
+		var Detail = ''; //Global that is used to submit tracking data
+
+		function Finish() {
+			//If there's a form, fill it out and submit it
+			if (document.store != null) {
+				Frm = document.store;
+				Frm.starttime.value = HPNStartTime;
+				Frm.endtime.value = (new Date()).getTime();
+				Frm.mark.value = Score;
+				Frm.detail.value = Detail;
+				Frm.submit();
+			}
+		}
+
+
+
+
+		//JCROSS CORE JAVASCRIPT CODE
+
+		var InGap = false;
+		var CurrentBox = null;
+		var Feedback = '';
+		var AcrossCaption = '';
+		var DownCaption = '';
+		var Correct = 'Respuesta correcta';
+		var Incorrect = 'Algunas respuestas incorrectas. Las casillas incorrectas han sido tachadas.';
+		var GiveHint = 'Se ha añadido la letra correcta.';
+		var YourScoreIs = 'Tu puntaje es: ';
+		var BuiltGrid = '';
+		var BuiltExercise = '';
+		var Penalties = 0;
+		var Score = 0;
+		var InTextBox = false;
+		var Locked = false;
+		var TimeOver = false;
+		var CaseSensitive = false;
+
+		var InputStuff = '<form method="post" action="" onsubmit="return false;"><span class="ClueNum">[strClueNum]: </span>';
+		InputStuff += '[strClue] <input style="text-transform: uppercase" onfocus="CurrentBox=this;InTextBox=true;" onblur="InTextBox=false;" id="[strBoxId]" type="edit" size="[strEditSize]" maxlength="[strMaxLength]"></input>';
+		InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="EnterGuess([strParams])">Agregar</button>';
+		InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint([strParams])">Pista</button>';
+		InputStuff += '</form>';
+
+		var CurrBoxElement = null;
+		var Finished = false;
+
+		function StartUp() {
+			RemoveBottomNavBarForIE();
+			//Show a keypad if there is one	(added bugfix for 6.0.4.12)
+			if (document.getElementById('CharacterKeypad') != null) {
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+
+
+			AcrossCaption = document.getElementById('CluesAcrossLabel').innerHTML;
+			DownCaption = document.getElementById('CluesDownLabel').innerHTML;
+
+
+
+
+
+
+		}
+
+		function GetAnswerLength(Across, x, y) {
+			Result = 0;
+			if (Across == false) {
+				while ((x < L.length) && (L[x][y].length > 0)) {
+					Result += L[x][y].length;
+					x++;
+				}
+				return Result;
+			}
+			else {
+				while ((y < L[x].length) && (L[x][y].length > 0)) {
+					Result += L[x][y].length;
+					y++;
+				}
+				return Result;
+			}
+		}
+
+		function GetEditSize(Across, x, y) {
+			var Len = GetAnswerLength(Across, x, y);
+			if (IsCJK(L[x][y].charCodeAt(0))) {
+				Len *= 2;
+			}
+			return Len;
+		}
+
+		function ShowClue(ClueNum, x, y) {
+			var Result = '';
+			var Temp;
+			var strParams;
+			var Clue = document.getElementById('Clue_A_' + ClueNum);
+			if (Clue != null) {
+				Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+				Temp = Temp.replace(/\[strClueNum\]/g, AcrossCaption + ' ' + ClueNum);
+				strParams = 'true,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+				Temp = Temp.replace(/\[strParams\]/g, strParams);
+				Temp = Temp.replace(/\[strBoxId\]/g, 'GA_' + ClueNum + '_' + x + '_' + y);
+				Temp = Temp.replace(/\[strEditSize\]/g, GetEditSize(true, x, y));
+				Temp = Temp.replace(/\[strMaxLength\]/g, GetAnswerLength(true, x, y));
+				Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+				Result += Temp;
+			}
+			Clue = document.getElementById('Clue_D_' + ClueNum);
+			if (Clue != null) {
+				Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+				Temp = Temp.replace(/\[strClueNum\]/g, DownCaption + ' ' + ClueNum);
+				strParams = 'false,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+				Temp = Temp.replace(/\[strParams\]/g, strParams);
+				Temp = Temp.replace(/\[strBoxId\]/g, 'GD_' + ClueNum + '_' + x + '_' + y);
+				Temp = Temp.replace(/\[strEditSize\]/g, GetAnswerLength(false, x, y));
+				Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+				Result += Temp;
+			}
+			document.getElementById('ClueEntry').innerHTML = Result;
+		}
+
+		function EnterGuess(Across, ClueNum, x, y, BoxId) {
+			if (document.getElementById(BoxId) != null) {
+				var Guess = document.getElementById(BoxId).value;
+				var AnsLength = GetAnswerLength(Across, x, y);
+				EnterAnswer(Guess, Across, AnsLength, x, y);
+			}
+		}
+
+		function SplitStringToPerceivedChars(InString, PC) {
+			var Temp = InString.charAt(0);
+			if (InString.length > 1) {
+				for (var i = 1; i < InString.length; i++) {
+					if (IsCombiningDiacritic(InString.charCodeAt(i)) == true) {
+						Temp += InString.charAt(i);
+					}
+					else {
+						PC.push(Temp);
+						Temp = InString.charAt(i);
+					}
+				}
+			}
+			PC.push(Temp);
+		}
+
+		function EnterAnswer(Guess, Across, AnsLength, x, y) {
+			var PC = new Array();
+			SplitStringToPerceivedChars(Guess, PC);
+
+			var i = x;
+			var j = y;
+			var Letter = 0;
+			while (Letter < AnsLength) {
+				if (Letter < PC.length) {
+					G[i][j] = PC[Letter];
+					if (document.getElementById('L_' + i + '_' + j) != null) {
+						document.getElementById('L_' + i + '_' + j).innerHTML = PC[Letter];
+					}
+				}
+				if (Across == true) {
+					j++;
+				}
+				else {
+					i++;
+				}
+				Letter++;
+			}
+		}
+
+		function SetGridSquareValue(x, y, Val) {
+			var GridId = 'L_' + x + '_' + y;
+			if (document.getElementById(GridId) != null) {
+				document.getElementById(GridId).innerHTML = Val;
+			}
+		}
+
+		function ShowHint(Across, ClueNum, x, y, BoxId) {
+			var i = x;
+			var j = y;
+			var LetterFromGuess = '';
+			var LetterFromKey = '';
+			var OutString = '';
+			if (Across == true) {
+				while (j < L[i].length) {
+					if (L[i][j] != '') {
+						OutString += L[i][j];
+						if (CaseSensitive == true) {
+							LetterFromKey = L[i][j];
+							LetterFromGuess = G[i][j];
+						}
+						else {
+							LetterFromKey = L[i][j].toUpperCase();
+							LetterFromGuess = G[i][j].toUpperCase();
+						}
+						if (LetterFromGuess != LetterFromKey) {
+							//				if (G[i][j] != L[i][j]){
+							G[i][j] = L[i][j];
+							Penalties++;
+							break;
+						}
+					}
+					else {
+						break;
+					}
+					j++;
+				}
+			}
+			else {
+				while (i < L.length) {
+					if (L[i][j] != '') {
+						OutString += L[i][j];
+						if (CaseSensitive == true) {
+							LetterFromKey = L[i][j];
+							LetterFromGuess = G[i][j];
+						}
+						else {
+							LetterFromKey = L[i][j].toUpperCase();
+							LetterFromGuess = G[i][j].toUpperCase();
+						}
+						if (LetterFromGuess != LetterFromKey) {
+							//				if (G[i][j] != L[i][j]){
+							G[i][j] = L[i][j];
+							Penalties++;
+							break;
+						}
+					}
+					else {
+						break;
+					}
+					i++;
+				}
+			}
+			if (document.getElementById(BoxId) != null) {
+				document.getElementById(BoxId).value = OutString;
+			}
+		}
+
+		L = new Array();
+		L[0] = new Array('E', 'Q', 'U', 'I', 'L', 'Á', 'T', 'E', 'R', 'O', '', '', '', '');
+		L[1] = new Array('', '', '', '', 'O', '', '', '', '', '', '', '', '', '');
+		L[2] = new Array('', '', '', '', 'G', '', '', '', '', '', '', '', '', '');
+		L[3] = new Array('', '', 'F', 'R', 'A', 'C', 'C', 'I', 'Ó', 'N', '', '', '', '');
+		L[4] = new Array('', 'B', '', '', 'R', '', '', '', '', '', '', '', '', '');
+		L[5] = new Array('', 'I', 'N', 'F', 'I', 'N', 'I', 'T', 'O', '', '', '', '', '');
+		L[6] = new Array('', 'N', '', '', 'T', '', '', '', '', '', '', '', '', '');
+		L[7] = new Array('', 'O', '', '', 'M', '', '', 'F', '', '', '', '', '', '');
+		L[8] = new Array('', 'M', '', 'C', 'O', 'N', 'J', 'U', 'N', 'T', 'O', '', '', '');
+		L[9] = new Array('', 'I', '', '', '', '', '', 'N', '', '', '', '', '', '');
+		L[10] = new Array('', 'O', '', '', '', '', '', 'C', '', '', '', '', '', '');
+		L[11] = new Array('', '', '', '', 'L', 'Í', 'M', 'I', 'T', 'E', '', '', '', '');
+		L[12] = new Array('', '', '', '', '', '', '', 'Ó', '', '', 'C', '', '', '');
+		L[13] = new Array('', 'H', 'I', 'P', 'O', 'T', 'E', 'N', 'U', 'S', 'A', '', '', '');
+		L[14] = new Array('', '', '', '', '', '', '', '', '', '', 'T', '', '', '');
+		L[15] = new Array('', '', '', '', '', 'A', 'R', 'G', 'U', 'M', 'E', 'N', 'T', 'O');
+		L[16] = new Array('', '', '', '', '', '', '', '', '', '', 'T', '', '', '');
+		L[17] = new Array('', '', '', '', '', '', '', '', '', '', 'O', '', '', '');
+
+
+		CL = new Array();
+		CL[0] = new Array(1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[1] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[2] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[3] = new Array(0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[4] = new Array(0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[5] = new Array(0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[6] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[7] = new Array(0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0);
+		CL[8] = new Array(0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[9] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[10] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[11] = new Array(0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[12] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0);
+		CL[13] = new Array(0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[14] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[15] = new Array(0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[16] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		CL[17] = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+
+		G = new Array();
+		G[0] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[1] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[2] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[3] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[4] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[5] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[6] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[7] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[8] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[9] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[10] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[11] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[12] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[13] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[14] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[15] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[16] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+		G[17] = new Array('', '', '', '', '', '', '', '', '', '', '', '', '', '');
+
+
+		function CheckAnswers() {
+			if (Locked == true) { return; }
+
+			var AllCorrect = true;
+			var TotLetters = 0;
+			var CorrectLetters = 0;
+			var LetterFromKey = '';
+			var LetterFromGuess = '';
+
+			//Check each letter
+			for (var i = 0; i < L.length; i++) {
+				for (var j = 0; j < L[i].length; j++) {
+					if (L[i][j] != '') {
+						TotLetters++;
+						if (CaseSensitive == true) {
+							LetterFromKey = L[i][j];
+							LetterFromGuess = G[i][j];
+						}
+						else {
+							LetterFromKey = L[i][j].toUpperCase();
+							LetterFromGuess = G[i][j].toUpperCase();
+						}
+						if (LetterFromGuess != LetterFromKey) {
+							G[i][j] = '';
+							//Blank that square in the grid
+							SetGridSquareValue(i, j, '');
+							AllCorrect = false;
+						}
+						else {
+							CorrectLetters++;
+						}
+					}
+				}
+			}
+
+			Score = Math.floor(((CorrectLetters - Penalties) * 100) / TotLetters);
+			if (Score < 0) { Score = 0; }
+
+			//Compile the output
+			var Output = '';
+
+			if (AllCorrect == true) {
+				Output = Correct + '<br />';
+			}
+
+			Output += YourScoreIs + ' ' + Score + '%.<br />';
+			if (AllCorrect == false) {
+				Output += Incorrect;
+				Penalties++;
+			}
+
+			ShowMessage(Output);
+			WriteToInstructions(Output);
+
+			if ((AllCorrect == true) || (TimeOver == true)) {
+
+
+				TimeOver = true;
+				Locked = true;
+				Finished = true;
+				setTimeout('Finish()', SubmissionTimeout);
+			}
+
+		}
+
+		function Finish() {
+			//If there's a form, fill it out and submit it
+			if (document.store != null) {
+				Frm = document.store;
+				Frm.starttime.value = HPNStartTime;
+				Frm.endtime.value = (new Date()).getTime();
+				Frm.mark.value = Score;
+				Frm.submit();
+			}
+		}
+
+		function TypeChars(Chars) {
+			if (CurrentBox != null) {
+				CurrentBox.value += Chars;
+			}
+		}
+
+
+
+
+
+
+
+
+		//-->
+
+//]]>
+
+	</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody">
+
+
+	<!-- BeginTopNavButtons -->
+
+	<!-- 
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+-->
+
+	<!-- EndTopNavButtons -->
+
+	<div class="Titles">
+		<h1 class="ExerciseTitle" style="color: #2a2a2a">Objetivo de la actividad: <span class="ExerciseTitle"
+				font-size="medium">Recordar conceptos matemáticos pertinentes para la construcción de modelos que busquen describir y/o predecir fenómenos o situaciones</span>
+		</h1>
+
+
+
+
+
+	</div>
+
+	<div id="InstructionsDiv" class="StdDiv">
+		<div id="Instructions" style="font-size: small;">Para comenzar, has click en alguno de los números del puzle.
+			Luego, escribe el concepto correspondiente a la descripción en la casilla de ingreso de texto y presiona el
+			botón 'Agregar'. </br>
+			Si necesitas ayuda en alguna palabra, puedes usar el botón 'Pista' para revelar una letra. Perderás puntaje
+			por cada letra revelada. Usa tildes (acentos) donde corresponda, también se pierde puntaje por errores
+			ortográficos. </br>
+			Cuando hayas terminado, has click en el botón 'Revisar' para verificar las respuestas y conocer tu puntaje.
+			Si hubo algún error, la casilla correpondiente aparecerá en blanco. </br>
+			Para comenzar otra vez, puedes refrescar la página o usar el botón 'Volver a empezar' en la parte inferior.
+		</div>
+	</div>
+
+
+
+	<div id="MainDiv" class="StdDiv">
+
+
+
+		<div id="ClueEntry">
+
+		</div>
+
+		<!-- This top button is hidden; uncomment it to reveal it. -->
+		<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Check&nbsp;</button>
+
+ -->
+
+		<table class="CrosswordGrid">
+			<tbody>
+
+				<tr id="Row_0">
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(1,0,0)">1</a><span class="NumLetterCellText" id="L_0_0"
+							onclick="ShowClue(1,0,0)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_1">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_2">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_3">&nbsp;</span></td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(2,0,4)">2</a><span class="NumLetterCellText" id="L_0_4"
+							onclick="ShowClue(2,0,4)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_0_9">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_1">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_1_4">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_2">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_2_4">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_3">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(3,3,2)">3</a><span class="NumLetterCellText" id="L_3_2"
+							onclick="ShowClue(3,3,2)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_3">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_4">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_3_9">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_4">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(4,4,1)">4</a><span class="NumLetterCellText" id="L_4_1"
+							onclick="ShowClue(4,4,1)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_4_4">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_5">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(5,5,1)">5</a><span class="NumLetterCellText" id="L_5_1"
+							onclick="ShowClue(5,5,1)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_2">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_3">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_4">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_5_8">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_6">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_6_1">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_6_4">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_7">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_7_1">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_7_4">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(6,7,7)">6</a><span class="NumLetterCellText" id="L_7_7"
+							onclick="ShowClue(6,7,7)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_8">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_8_1">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(7,8,3)">7</a><span class="NumLetterCellText" id="L_8_3"
+							onclick="ShowClue(7,8,3)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_4">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_9">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_8_10">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_9">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_9_1">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_9_7">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_10">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_10_1">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_10_7">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_11">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(8,11,4)">8</a><span class="NumLetterCellText" id="L_11_4"
+							onclick="ShowClue(8,11,4)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_11_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_11_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_11_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_11_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_11_9">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_12">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_12_7">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(9,12,10)">9</a><span class="NumLetterCellText" id="L_12_10"
+							onclick="ShowClue(9,12,10)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_13">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(10,13,1)">10</a><span class="NumLetterCellText" id="L_13_1"
+							onclick="ShowClue(10,13,1)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_2">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_3">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_4">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_5">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_9">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_13_10">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_14">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_14_10">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_15">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum"
+							onclick="ShowClue(11,15,5)">11</a><span class="NumLetterCellText" id="L_15_5"
+							onclick="ShowClue(11,15,5)">&nbsp;&nbsp;&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_6">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_7">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_8">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_9">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_10">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_11">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_12">&nbsp;</span></td>
+					<td class="LetterOnlyCell"><span id="L_15_13">&nbsp;</span></td>
+				</tr>
+				<tr id="Row_16">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_16_10">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+				<tr id="Row_17">
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="LetterOnlyCell"><span id="L_17_10">&nbsp;</span></td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+					<td class="BlankCell">&nbsp;</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)"
+			onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)"
+			onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Revisar&nbsp;</button>
+
+
+		<table id="Clues" style="display: none;">
+			<tbody>
+				<tr>
+					<td>
+
+						<table class="ClueList">
+							<tbody id="CluesAcross">
+								<tr>
+									<td colspan="2">
+										<h3 class="ExerciseSubtitle" id="CluesAcrossLabel">Horizontal</h3>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="ClueNum">1. </td>
+									<td id="Clue_A_1" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;"> Tipo
+											de triángulo que tiene todos sus lados de la misma longitud</span>
+										</br>
+										<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fescolaeducacao.com.br%2Fwp-content%2Fuploads%2F2020%2F06%2Ftriangulo-equilatero.png&f=1&nofb=1&ipt=95c24ef41bb43217f082f18d538b6e1cce94419560eb8b2e038133f2503003c2&ipo=images" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">3. </td>
+									
+									<td id="Clue_A_3" class="Clue">
+											<span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;"> Número que se
+											obtiene al dividir un entero en partes iguales</span> 
+											</br>
+											<img src="https://magoosh.com/gmat/files/2012/06/fractions_img1.png" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">5. </td>
+									<td id="Clue_A_5" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Cardinalidad de
+											un conjunto cuyo número de
+											elementos no tiene fin</span>
+										</br>
+										<img src="https://www.pngall.com/wp-content/uploads/5/Infinity-Symbol-PNG-File.png" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">7. </td>
+									<td id="Clue_A_7" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Colección de
+											elementos</span>
+										</br>
+										<img src="https://qph.fs.quoracdn.net/main-qimg-92decb116dbafa09ed81745799a38e03" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">8. </td>
+									<td id="Clue_A_8" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Valor al que
+											tiende una función a medida que
+											su argumento se aproxima progresivamente a un número</span> 
+										</br>
+										<img src="https://pormasmatematica.com.ar/wp-content/uploads/2019/06/limite.jpg" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">10. </td>
+									<td id="Clue_A_10" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Lado de mayor
+											longitud de un triángulo
+											rectángulo</span>
+										</br>
+										<img src="https://www.softschools.com/math/geometry/proofs/images/triangle_proofs_hypotenuse_leg_img_2.jpg" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">11. </td>
+									<td id="Clue_A_11" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Valor que se
+											asigna o 'pasa' a una función para ser evaluado</span>
+										</br>
+										<svg xmlns="http://www.w3.org/2000/svg" width="200" viewBox="0 0 450 420" style="float: left" >
+											<path id="Imported Path"
+												  fill="true" stroke="black" stroke-width="1"
+												  d="M 199.86,300.08
+													 C 197.74,301.45 194.48,304.46 192.61,306.96
+													   189.23,311.46 189.23,311.46 191.73,312.84
+													   193.98,314.09 194.73,313.71 196.86,311.09
+													   204.24,301.70 208.12,304.83 212.37,323.35
+													   212.37,323.35 215.37,336.99 215.37,336.99
+													   215.37,336.99 207.99,345.99 207.99,345.99
+													   203.86,351.00 198.74,356.63 196.61,358.38
+													   192.98,361.38 192.48,361.51 190.48,359.76
+													   185.85,355.63 183.97,357.25 182.35,366.76
+													   181.60,370.89 181.85,371.39 184.48,372.02
+													   190.60,373.64 196.48,370.64 202.86,362.88
+													   206.24,358.75 210.87,352.75 213.12,349.50
+													   213.12,349.50 217.25,343.62 217.25,343.62
+													   217.25,343.62 219.50,354.00 219.50,354.00
+													   220.63,359.76 222.63,365.89 223.63,367.51
+													   228.88,375.52 241.02,373.27 249.15,363.01
+													   253.03,358.13 253.03,358.00 250.65,356.63
+													   248.52,355.50 247.52,356.00 243.89,359.88
+													   240.77,363.26 239.14,364.26 237.14,363.63
+													   233.89,362.63 232.51,359.51 229.13,344.37
+													   229.13,344.37 226.26,331.86 226.26,331.86
+													   226.26,331.86 229.63,327.48 229.63,327.48
+													   240.02,313.84 250.52,305.21 250.52,310.34
+													   250.52,310.96 251.90,311.59 253.53,311.59
+													   256.15,311.59 256.78,310.71 257.90,305.33
+													   258.65,301.83 259.28,298.70 259.28,298.45
+													   259.28,298.08 256.65,297.83 253.53,297.83
+													   245.90,297.83 242.27,300.58 232.51,313.59
+													   224.63,323.97 223.00,324.72 223.00,317.97
+													   223.00,313.71 219.13,302.70 216.62,300.20
+													   213.50,297.07 204.99,297.07 199.86,300.08 Z
+													 M 270.16,263.92
+													 C 269.66,266.05 270.79,267.17 277.04,270.55
+													   294.06,279.56 302.44,297.45 303.94,327.23
+													   305.56,361.63 294.68,388.66 275.67,397.16
+													   271.66,399.04 270.54,400.17 270.54,402.67
+													   270.54,405.30 270.91,405.55 274.04,404.92
+													   284.92,402.29 297.68,392.53 305.31,381.15
+													   317.45,362.63 320.95,327.35 312.82,302.95
+													   306.19,282.56 290.55,266.17 274.17,262.17
+													   271.54,261.54 270.79,261.92 270.16,263.92 Z
+													 M 161.96,266.05
+													 C 147.20,273.43 136.19,288.19 130.81,307.83
+													   129.06,314.09 128.56,320.47 128.68,334.73
+													   128.68,351.62 129.06,354.50 132.06,363.76
+													   138.32,382.40 149.70,395.91 164.96,402.42
+													   171.84,405.30 173.34,405.55 174.34,404.05
+													   176.34,400.92 175.59,399.42 171.22,397.91
+													   165.96,396.16 157.71,389.16 152.95,382.28
+													   138.19,360.76 137.32,310.84 151.33,286.94
+													   155.33,280.18 165.46,270.93 171.09,269.05
+													   175.59,267.55 175.97,266.92 174.72,263.54
+													   173.59,260.67 171.84,261.04 161.96,266.05 Z
+													 M 83.15,263.79
+													 C 72.52,267.67 65.64,275.81 61.13,289.94
+													   58.63,297.45 56.88,299.20 50.63,300.20
+													   47.12,300.83 45.87,301.58 45.62,303.83
+													   45.25,306.33 45.75,306.58 51.38,306.58
+													   56.76,306.58 57.63,306.96 57.13,308.71
+													   56.88,309.96 52.75,327.98 48.00,348.87
+													   43.12,369.76 38.24,388.91 36.87,391.41
+													   35.12,395.04 33.36,396.41 28.74,397.91
+													   24.11,399.42 22.86,400.42 22.86,402.54
+													   22.86,408.92 39.12,404.55 45.87,396.54
+													   51.88,389.53 54.00,382.53 61.76,346.62
+													   65.76,327.73 69.39,310.96 69.77,309.34
+													   70.39,306.71 71.14,306.58 80.40,306.58
+													   87.53,306.58 90.41,306.08 90.41,304.96
+													   90.41,304.21 90.78,302.20 91.16,300.58
+													   91.91,297.95 91.66,297.83 82.27,297.83
+													   82.27,297.83 72.64,297.83 72.64,297.83
+													   72.64,297.83 73.39,293.57 73.39,293.57
+													   76.52,277.18 82.65,267.80 90.28,267.80
+													   93.41,267.80 94.78,268.67 96.79,272.05
+													   98.29,274.80 100.04,276.18 101.41,275.93
+													   102.54,275.68 103.92,275.43 104.29,275.43
+													   105.42,275.30 108.17,263.92 107.42,263.04
+													   107.04,262.79 102.92,262.29 98.29,261.92
+													   92.03,261.67 88.03,262.17 83.15,263.79 Z
+													 M 192.98,135.80
+													 C 192.98,135.80 192.98,171.46 192.98,171.46
+													   192.98,171.46 176.47,171.46 176.47,171.46
+													   176.47,171.46 159.83,171.46 159.83,171.46
+													   159.83,171.46 192.11,203.62 192.11,203.62
+													   192.11,203.62 224.25,235.89 224.25,235.89
+													   224.25,235.89 256.40,203.62 256.40,203.62
+													   256.40,203.62 288.68,171.46 288.68,171.46
+													   288.68,171.46 272.04,171.46 272.04,171.46
+													   272.04,171.46 255.53,171.46 255.53,171.46
+													   255.53,171.46 255.53,135.80 255.53,135.80
+													   255.53,135.80 255.53,100.15 255.53,100.15
+													   255.53,100.15 224.25,100.15 224.25,100.15
+													   224.25,100.15 192.98,100.15 192.98,100.15
+													   192.98,100.15 192.98,135.80 192.98,135.80 Z
+													 M 248.02,143.31
+													 C 248.02,143.31 248.02,178.97 248.02,178.97
+													   248.02,178.97 258.91,178.97 258.91,178.97
+													   258.91,178.97 269.91,178.97 269.91,178.97
+													   269.91,178.97 247.02,201.74 247.02,201.74
+													   247.02,201.74 224.25,224.63 224.25,224.63
+													   224.25,224.63 201.49,201.74 201.49,201.74
+													   201.49,201.74 178.60,178.97 178.60,178.97
+													   178.60,178.97 189.60,178.97 189.60,178.97
+													   189.60,178.97 200.49,178.97 200.49,178.97
+													   200.49,178.97 200.49,143.31 200.49,143.31
+													   200.49,143.31 200.49,107.65 200.49,107.65
+													   200.49,107.65 224.25,107.65 224.25,107.65
+													   224.25,107.65 248.02,107.65 248.02,107.65
+													   248.02,107.65 248.02,143.31 248.02,143.31 Z
+													 M 396.88,38.22
+													 C 396.88,38.22 396.88,52.61 396.88,52.61
+													   396.88,52.61 400.63,52.61 400.63,52.61
+													   400.63,52.61 404.39,52.61 404.39,52.61
+													   404.39,52.61 404.39,38.22 404.39,38.22
+													   404.39,38.22 404.39,23.83 404.39,23.83
+													   404.39,23.83 400.63,23.83 400.63,23.83
+													   400.63,23.83 396.88,23.83 396.88,23.83
+													   396.88,23.83 396.88,38.22 396.88,38.22 Z
+													 M 363.61,25.71
+													 C 363.23,26.71 363.11,32.34 363.23,38.34
+													   363.73,47.85 364.11,49.35 366.73,51.48
+													   370.49,54.61 375.74,54.48 379.87,51.23
+													   382.50,49.10 383.12,48.98 383.12,50.60
+													   383.12,51.85 384.25,52.61 386.25,52.61
+													   386.25,52.61 389.38,52.61 389.38,52.61
+													   389.38,52.61 389.38,38.22 389.38,38.22
+													   389.38,38.22 389.38,23.83 389.38,23.83
+													   389.38,23.83 385.62,23.83 385.62,23.83
+													   385.62,23.83 381.87,23.83 381.87,23.83
+													   381.87,23.83 381.87,33.59 381.87,33.59
+													   381.87,41.60 381.37,43.85 379.62,45.47
+													   373.74,50.85 370.61,46.73 370.61,33.34
+													   370.61,23.95 370.61,23.83 367.49,23.83
+													   365.73,23.83 363.98,24.71 363.61,25.71 Z
+													 M 222.63,24.71
+													 C 222.38,25.21 224.13,31.59 226.63,38.84
+													   226.63,38.84 231.13,51.98 231.13,51.98
+													   231.13,51.98 236.14,51.98 236.14,51.98
+													   236.14,51.98 241.14,51.98 241.14,51.98
+													   241.14,51.98 245.15,41.35 245.15,41.35
+													   247.27,35.47 249.52,29.08 249.90,27.21
+													   250.77,24.08 250.52,23.83 246.90,23.83
+													   243.27,23.83 243.02,24.20 240.39,32.84
+													   238.89,37.84 237.39,42.47 237.01,43.22
+													   236.64,43.85 234.89,39.97 233.14,34.46
+													   230.26,25.58 229.51,24.46 226.51,24.08
+													   224.75,23.83 223.00,24.08 222.63,24.71 Z
+													 M 146.70,36.34
+													 C 146.70,47.23 147.07,49.23 149.20,51.35
+													   152.45,54.61 157.96,54.61 162.21,51.23
+													   164.84,49.10 165.46,48.98 165.46,50.60
+													   165.46,51.85 166.59,52.61 168.59,52.61
+													   168.59,52.61 171.72,52.61 171.72,52.61
+													   171.72,52.61 171.72,38.09 171.72,38.09
+													   171.72,38.09 171.72,23.70 171.72,23.70
+													   171.72,23.70 168.34,24.08 168.34,24.08
+													   164.96,24.46 164.84,24.58 164.46,33.84
+													   164.09,43.72 162.21,47.60 157.71,47.60
+													   154.45,47.60 152.95,42.72 152.95,32.46
+													   152.95,24.08 152.83,23.83 149.82,23.83
+													   149.82,23.83 146.70,23.83 146.70,23.83
+													   146.70,23.83 146.70,36.34 146.70,36.34 Z
+													 M 334.96,24.08
+													 C 331.08,26.33 329.58,28.96 328.58,34.84
+													   326.45,48.60 336.09,58.36 345.34,51.85
+													   348.10,49.98 348.10,49.98 348.10,56.86
+													   348.10,63.87 348.10,63.87 351.85,63.87
+													   351.85,63.87 355.60,63.87 355.60,63.87
+													   355.60,63.87 355.60,43.85 355.60,43.85
+													   355.60,43.85 355.60,23.83 355.60,23.83
+													   355.60,23.83 352.60,23.83 352.60,23.83
+													   350.97,23.83 349.35,24.46 349.10,25.33
+													   348.72,26.33 347.72,26.21 345.59,24.71
+													   342.09,22.20 338.46,22.08 334.96,24.08 Z
+													 M 346.09,31.21
+													 C 347.60,32.84 348.10,35.21 347.85,38.97
+													   347.60,43.35 346.85,44.72 344.09,46.35
+													   340.97,47.98 340.47,47.98 338.46,45.97
+													   336.96,44.60 336.21,41.85 336.21,38.34
+													   336.21,29.71 341.34,25.96 346.09,31.21 Z
+													 M 302.81,24.08
+													 C 300.31,24.96 299.31,26.21 299.31,28.46
+													   299.31,31.09 299.69,31.34 302.19,30.59
+													   303.69,29.96 306.94,29.58 309.32,29.46
+													   312.82,29.46 313.82,29.96 314.07,32.09
+													   314.45,34.34 313.70,34.84 308.69,35.34
+													   301.19,36.22 298.06,39.09 298.06,45.22
+													   298.06,48.73 298.81,50.48 300.81,51.85
+													   304.31,54.36 309.19,54.36 312.69,51.98
+													   314.45,50.73 315.70,50.48 316.20,51.35
+													   316.57,51.98 318.07,52.61 319.45,52.61
+													   321.58,52.61 321.83,51.60 321.83,40.34
+													   321.83,33.71 321.33,27.58 320.83,26.83
+													   318.20,22.83 309.69,21.45 302.81,24.08 Z
+													 M 314.32,42.35
+													 C 314.32,47.10 308.57,49.35 305.56,45.72
+													   303.31,43.10 306.06,40.09 310.69,40.09
+													   313.32,40.09 314.32,40.72 314.32,42.35 Z
+													 M 257.78,24.08
+													 C 255.28,24.96 254.28,26.21 254.28,28.46
+													   254.28,31.09 254.65,31.34 257.15,30.59
+													   258.65,29.96 261.91,29.58 264.28,29.46
+													   267.79,29.46 268.79,29.96 269.04,32.09
+													   269.41,34.34 268.66,34.84 263.66,35.34
+													   256.15,36.22 253.03,39.09 253.03,45.22
+													   253.03,48.73 253.78,50.48 255.78,51.85
+													   259.28,54.36 264.16,54.36 267.66,51.98
+													   269.41,50.73 270.66,50.48 271.16,51.35
+													   271.54,51.98 273.04,52.61 274.42,52.61
+													   276.54,52.61 276.79,51.60 276.79,40.34
+													   276.79,33.71 276.29,27.58 275.79,26.83
+													   273.17,22.83 264.66,21.45 257.78,24.08 Z
+													 M 269.29,42.35
+													 C 269.29,47.10 263.53,49.35 260.53,45.72
+													   258.28,43.10 261.03,40.09 265.66,40.09
+													   268.29,40.09 269.29,40.72 269.29,42.35 Z
+													 M 185.48,24.20
+													 C 177.72,28.08 175.59,43.35 181.97,49.60
+													   185.35,53.11 191.98,54.61 198.49,53.36
+													   202.11,52.61 202.99,51.98 202.99,49.48
+													   202.99,46.60 202.74,46.60 196.23,47.23
+													   190.23,47.85 189.35,47.60 187.48,44.97
+													   186.35,43.35 185.48,41.60 185.48,41.10
+													   185.48,40.47 189.73,40.09 194.86,40.09
+													   194.86,40.09 204.24,40.09 204.24,40.09
+													   204.24,40.09 204.24,34.96 204.24,34.96
+													   204.24,25.33 194.48,19.70 185.48,24.20 Z
+													 M 196.86,32.21
+													 C 197.86,34.96 197.61,35.09 191.61,35.09
+													   185.23,35.09 184.98,34.71 188.35,30.34
+													   190.35,27.83 195.73,29.08 196.86,32.21 Z
+													 M 116.30,25.08
+													 C 114.55,26.46 112.67,29.08 112.05,30.96
+													   110.92,34.21 110.92,35.59 111.42,44.22
+													   111.92,51.85 121.30,56.36 127.56,51.98
+													   130.31,50.10 130.31,50.10 130.69,56.61
+													   131.06,62.74 131.31,63.24 134.56,63.62
+													   134.56,63.62 137.94,63.99 137.94,63.99
+													   137.94,63.99 137.94,43.97 137.94,43.97
+													   137.94,43.97 137.94,23.83 137.94,23.83
+													   137.94,23.83 134.81,23.83 134.81,23.83
+													   133.06,23.83 131.69,24.46 131.69,25.21
+													   131.69,26.08 130.44,25.83 128.56,24.58
+													   124.43,21.83 120.18,22.08 116.30,25.08 Z
+													 M 128.18,30.96
+													 C 131.06,33.59 131.19,42.10 128.31,45.35
+													   123.68,50.48 118.80,46.85 118.80,38.22
+													   118.80,29.71 123.05,26.33 128.18,30.96 Z
+													 M 69.52,24.96
+													 C 62.39,29.46 61.13,42.72 67.14,49.73
+													   70.39,53.48 78.65,54.86 84.15,52.61
+													   89.28,50.48 91.66,45.47 91.66,37.09
+													   91.66,27.71 88.28,23.70 79.65,22.95
+													   75.02,22.58 72.52,23.08 69.52,24.96 Z
+													 M 82.90,31.21
+													 C 84.78,34.96 84.40,43.35 82.15,45.60
+													   79.65,48.10 74.89,48.10 72.89,45.60
+													   71.89,44.60 71.27,41.22 71.27,38.22
+													   71.27,35.21 71.89,31.84 72.89,30.84
+													   75.14,27.96 81.27,28.33 82.90,31.21 Z
+													 M 39.37,32.21
+													 C 39.37,32.21 39.74,51.98 39.74,51.98
+													   39.74,51.98 50.13,52.36 50.13,52.36
+													   60.38,52.73 60.38,52.73 60.38,49.48
+													   60.38,46.47 60.01,46.35 53.50,46.35
+													   53.50,46.35 46.62,46.35 46.62,46.35
+													   46.62,46.35 46.62,29.46 46.62,29.46
+													   46.62,29.46 46.62,12.57 46.62,12.57
+													   46.62,12.57 42.87,12.57 42.87,12.57
+													   42.87,12.57 38.99,12.57 38.99,12.57
+													   38.99,12.57 39.37,32.21 39.37,32.21 Z
+													 M 399.51,15.07
+													 C 399.51,15.07 396.76,20.08 396.76,20.08
+													   396.76,20.08 399.63,20.08 399.63,20.08
+													   401.39,20.08 403.76,18.45 406.01,15.82
+													   410.27,10.44 410.27,10.07 405.89,10.07
+													   403.01,10.07 401.76,11.07 399.51,15.07 Z" />
+								   </svg>
+										</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</td>
+
+					<td>
+
+						<table class="ClueList">
+							<tbody id="CluesDown">
+								<tr>
+									<td colspan="2">
+										<h3 class="ExerciseSubtitle" id="CluesDownLabel">Vertical</h3>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="ClueNum">2. </td>
+									<td id="Clue_D_2" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Nombre de la
+											función que sirve para calcular
+											el número al cual se debe elevar una base dada para obtener como resultado
+											una potencia</span>
+										</br>
+										<img src="https://cdn.kastatic.org/googleusercontent/CfdIRZu_iMA_DFp7EilcK9igLFA42jd2hksGilRMBdINxoLKxj2LAWCjQxvj8m9E3Ik6tmVfPAFIx4whUTPp-KZw" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">4. </td>
+									<td id="Clue_D_4" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Expresión
+											algebraica compuesta por dos
+											términos</span>
+										</br>
+										<img src="http://2.bp.blogspot.com/-mFoYtb5KbNg/TZfb1N8wTaI/AAAAAAAAABw/ooI2_Klx5qg/s1600/a%252Bb.jpg" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">6. </td>
+									<td id="Clue_D_6" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Tipo de
+											relación entre dos conjuntos donde a
+											cada elemento del primer conjunto le corresponde un único elemteno del
+											segundo conjunto</span>
+										</br>
+										<img src="https://calcworkshop.com/wp-content/uploads/function-notation.png" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+								<tr>
+									<td class="ClueNum">9. </td>
+									<td id="Clue_D_9" class="Clue"><span
+											style="color: #5e70bd; font-size:medium; font-weight: bold;">Nombre del lado
+											de un triángulo</span>
+										</br>
+										<img src="https://es.calcuworld.com/wp-content/uploads/sites/2/2019/11/cateto-300x300.png" alt="Pista 3" title="P3" width="200" style="float: left;">&nbsp;</img>
+										</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+	<div id="Refreshdiv" style="align-items: flex-end;">
+		</br>
+		<button id="RefreshButton" class="FuncButton" style="float: right" onfocus="FuncBtnOver(this)"
+			onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"
+			onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onClick="window.location.reload();"> Volver a
+			empezar
+		</button>
+		
+	</div>
+
+
+	<div id="AursoAl" style="align-items: flex-start;">
+		</br>
+		<h3 id="CursoAlTit" class="ExerciseSubtitle" style="color: #ffffff;">Material elaborado por: Claudio Tapia </br> Asignatura: Evaluación </br> Actividad diseñada para: Activar conocimientos previos para la Unidad 3, nivel 4° Medio, de acuerdo al OA3.</h3></br>
+		<h3 style="color: #ffffff;">FG-MATE-4M-OAC-03: Construir modelos de situaciones o fenómenos de crecimiento, decrecimiento y periódicos que involucren funciones, potencias de exponente entero, y trigonométricas sen(x) y cos(x); de forma manuscrita, con uso de herramientas tecnológicas y promoviendo la búsqueda, selección, contrastación y verificación de información en ambientes digitales y redes sociales.</h3>
+	</div>
+
+
+	<div class="Feedback" id="FeedbackDiv">
+		<div class="FeedbackText" id="FeedbackContent"></div>
+		<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)"
+			onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)"
+			onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+	</div>
+
+
+
+	<!-- BeginBottomNavButtons -->
+
+	<!-- 
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+-->
+
+
+	<!-- EndBottomNavButtons -->
+
+	<!-- BeginSubmissionForm -->
+
+	<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
