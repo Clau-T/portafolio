@@ -35,12 +35,28 @@
   background-color: #555;
 }
 
+.collapsible:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 24px;
+  color: white;
+  float: right;
+  overflow: hidden;
+  margin-right: 5px;
+  display: inline-flex;
+}
+
+.active:after {
+  content: '\2212'; /* Unicode character for "minus" sign (-) */
+}
+
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+
 
 
   </style>
@@ -90,7 +106,7 @@
     <div class="w3-container">
       </br>
     <div>
-      <button type="button" class="collapsible"><h6>Objetivo</h6></button>
+      <button type="button" class="collapsible"> <h6 style="float:left;display: inline;" >Objetivo </h6></button>
       <div class="content">
         <p class="w3-text-grey" style="text-align:justify">Este sitio tiene por finalidad reunir información y recursos
           pertinentes para llevar a cabo evaluaciones en Enseñanza Media.</p>
@@ -98,7 +114,7 @@
       </div>
     </br>
     <div>
-      <button type="button" class="collapsible"><h6>El diseño de todo proceso de evaluación, según Pedro Ravela (2006), debe contemplar 5 elementos centrales:
+      <button type="button" class="collapsible"><h6 style="float:left;display: inline;">El diseño de todo proceso de evaluación, según Pedro Ravela (2006), debe contemplar 5 elementos centrales:
       </h6></button>
       <div class="content">
         <ol type="1" class="w3-text-grey" style="text-align:justify">
@@ -115,7 +131,7 @@
     </br>
   <div>
 
-    <button type="button" class="collapsible"><h6>Las etapas para llegar a implementar un procedimiento de evaluación, también son 5:
+    <button type="button" class="collapsible"><h6 style="float:left;display: inline;" >Las etapas para llegar a implementar un procedimiento de evaluación, también son 5:
     </h6></button>
     <div class="content">
       <ol type="1" class="w3-text-grey" style="text-align:justify">
@@ -349,7 +365,7 @@
 
 </br>
 <div>
-<button type="button" class="collapsible"><h6>Conclusiones</h6></button>
+<button type="button" class="collapsible"><h6 style="float:left;display: inline;">Conclusiones</h6></button>
 <div class="content">
   <p class="w3-text-grey" style="text-align:justify">Si la evaluación es consustancial al proceso de aprendizaje, cambiar las maneras de evaluar también es una de las 
     maneras en que la educación puede ser transformadora.  </br> 
@@ -405,6 +421,7 @@
 
       </div>
 
+
       <script>
         // Script to open and close sidebar
         function w3_open() {
@@ -433,10 +450,6 @@
             }
           });
         } 
-
-
-
-
 
       </script>
 
